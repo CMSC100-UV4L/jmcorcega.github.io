@@ -48,6 +48,7 @@ body {
 
 .name-fullname {
 	margin: 1vh 0;
+	font-size: 2em;
 	font-weight: 700;
 }
 

@@ -21,6 +21,10 @@ body {
 	backdrop-filter: blur(8px) brightness(80%);
 }
 
+.card-profile {
+	display: flex;
+}
+
 .profile-photo {
 	width: 8em;
 	border-radius: 100%;

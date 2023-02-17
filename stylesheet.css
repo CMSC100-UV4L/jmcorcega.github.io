@@ -21,3 +21,9 @@ body {
 	backdrop-filter: blur(8px) brightness(80%);
 }
 
+.profile-photo {
+	width: 8em;
+	border-radius: 100%;
+	display: inline-block;
+}
+

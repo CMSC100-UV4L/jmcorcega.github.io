@@ -31,3 +31,18 @@ body {
 	display: inline-block;
 }
 
+.profile-name {
+	display: inline-block;
+	margin: auto 3vw;
+}
+
+.name-fullname {
+	margin: 1vh 0;
+	font-weight: 700;
+}
+
+.name-nickname {
+	margin: 1vh 0;
+	font-weight: 400;
+}
+

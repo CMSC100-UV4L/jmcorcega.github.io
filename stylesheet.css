@@ -1,3 +1,23 @@
 
 /* Import Manrope from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
+
+html, body {
+	margin: 0;
+	height: 100%;
+	font-family: 'Manrope', sans-serif;
+}
+
+body {
+	background-image: url('background.jpg');
+	background-size: cover;
+	background-position: center;
+}
+
+.blurring-layer {
+	height: 100%;
+	width: 100%;
+	background-color: rgba(255, 255, 255, 0.25);
+	backdrop-filter: blur(8px) brightness(80%);
+}
+

@@ -32,12 +32,13 @@ body {
 }
 
 .cards-column {
-	display: flex;
+	display: block;
 	margin: auto;
 }
 
 .cards-left {
 	float: left;
+	min-width: 50%;
 }
 
 .cards-right {
@@ -149,10 +150,11 @@ body {
 	/* for the card on the left only */
 	.cards-left > .card {
 		margin: 1vh auto;
+		min-width: unset;
 	}
 
 	.cards-right > .card {
-		width: 100%;
+		width: 90%;
 		margin: 0 auto;
 	}
 

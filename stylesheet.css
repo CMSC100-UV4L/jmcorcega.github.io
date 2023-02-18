@@ -2,18 +2,21 @@
 /* Import Manrope from Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=Manrope:wght@300;400;600;700&display=swap');
 
+/* Main HTML and body styling */
 html, body {
 	margin: 0;
 	height: 100%;
 	font-family: 'Manrope', sans-serif;
 }
 
+/* Set webpage background */
 body {
 	background-image: url('background.jpg');
 	background-size: cover;
 	background-position: center;
 }
 
+/* Blurring layer for the background */
 .blurring-layer {
 	display: flex;
 	height: 100%;
@@ -22,38 +25,111 @@ body {
 	backdrop-filter: blur(8px) brightness(80%);
 }
 
+/* Card Tables */
+.cards {
+	display: flexbox;
+	margin: auto;
+}
+
+.cards-column {
+	display: flex;
+	margin: auto;
+}
+
+.cards-left {
+	float: left;
+}
+
+.cards-right {
+	float: right;
+	flex-shrink: 4;
+}
+
+/* Main card class */
 .card {
-	padding: 2vw;
+	padding: 1vw;
 	margin: auto;
 	background-color: #FAFAFA;
-	border-radius: 24px;
+	border-radius: 16px;
 	box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.25);
 }
 
+
+/* for the card on the left only */
+.cards-left > .card {
+	margin: 0 4vw;
+}
+
+/* for the card on the right only */
+.cards-right > .card {
+	width: 75%;
+	margin: 0 auto;
+}
+
+/* Profile cards */
 .card-profile {
 	display: flex;
 }
 
+.card-about-me {
+	display: block;
+	padding: 4vh 1vw;
+}
+
+/* Profile photo */
 .profile-photo {
 	padding: 1vw;
-	width: 8em;
+	width: 6rem;
 	border-radius: 100%;
 	display: inline-block;
 }
 
+/* Name and nickname */
 .profile-name {
 	display: inline-block;
-	margin: auto 3vw;
+	margin: auto 2vw;
 }
 
 .name-fullname {
 	margin: 1vh 0;
-	font-size: 2em;
+	font-size: 1.5em;
 	font-weight: 700;
 }
 
 .name-nickname {
 	margin: 1vh 0;
+	font-size: 0.75em;
 	font-weight: 400;
 }
 
+/* About me */
+.profile-about {
+	padding: 1.5vh 1vw;
+}
+
+.text-header {
+	margin: 0;
+	padding: 0 1vw;
+	font-size: 1.25em;
+	font-weight: 700;
+}
+
+/* Photo and sub-text */
+.profile-about-text {
+	padding: 1vh 0 1vw 1vw;
+	display: flex;
+}
+
+.text-subtext {
+	margin: auto 0;
+	padding: 0 1vw;
+	font-size: 0.85em;
+	font-weight: 400;
+}
+
+.profile-about-photo {
+	width: 4em;
+	height: 4em;
+	border-radius: 12px;
+	display: inline-block;
+}

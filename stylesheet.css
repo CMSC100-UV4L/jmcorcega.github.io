@@ -39,6 +39,7 @@ body {
 .cards-left {
 	float: left;
 	min-width: 50%;
+	max-width: 50%;
 }
 
 .cards-right {
@@ -58,7 +59,7 @@ body {
 
 /* for the card on the left only */
 .cards-left > .card {
-	margin: 0 4vw;
+	margin: 2vh 4vw;
 }
 
 /* for the card on the right only */
@@ -75,6 +76,10 @@ body {
 .card-about-me {
 	display: block;
 	padding: 4vh 1vw;
+}
+
+.card-hobbies {
+	padding: 2vw;
 }
 
 /* Profile photo */
@@ -128,6 +133,13 @@ body {
 	font-weight: 400;
 }
 
+.text-hobby {
+	margin: auto 0;
+	padding: 0.5vh 1vw;
+	font-size: 1em;
+	font-weight: 400;
+}
+
 .profile-about-photo {
 	width: 4em;
 	height: 4em;
@@ -137,6 +149,14 @@ body {
 
 /* Styling for mobile devices */
 @media only screen and (max-width: 1200px) {
+	.blurring-layer {
+		display: flex;
+		height: 150%;
+		width: 100%;
+		background-color: rgba(255, 255, 255, 0.25);
+		backdrop-filter: blur(8px) brightness(80%);
+	}
+	
 	.cards {
 		display: block;
 	}
@@ -145,12 +165,13 @@ body {
 		float: none;
 		padding: 2vw;
 		flex-shrink: unset;
+		max-width: unset;
+		min-width: unset;
 	}
 
 	/* for the card on the left only */
 	.cards-left > .card {
 		margin: 1vh auto;
-		min-width: unset;
 	}
 
 	.cards-right > .card {

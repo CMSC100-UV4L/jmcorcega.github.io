@@ -133,3 +133,74 @@ body {
 	border-radius: 12px;
 	display: inline-block;
 }
+
+/* Styling for mobile devices */
+@media only screen and (max-width: 1200px) {
+	.cards {
+		display: block;
+	}
+
+	.cards-left, .cards-right {
+		float: none;
+		padding: 2vw;
+		flex-shrink: unset;
+	}
+
+	/* for the card on the left only */
+	.cards-left > .card {
+		margin: 1vh auto;
+	}
+
+	.cards-right > .card {
+		width: 100%;
+		margin: 0 auto;
+	}
+
+	.card {
+		margin: auto;
+	}
+
+	.card-about-me {
+		display: block;
+		padding: 4vh 4vw;
+	}
+
+	.profile-photo {
+		width: 4rem;
+		height: 4rem;
+	}
+
+	.name-fullname {
+		margin: 0.25em 0;
+		font-size: 1.05em;
+		font-weight: 700;
+	}
+
+	.name-nickname {
+		margin: 0.25em 0;
+		font-size: 0.75em;
+		font-weight: 400;
+	}
+
+	.text-header {
+		margin: 0;
+		padding: 0 1vw;
+		font-size: 1.15em;
+		font-weight: 700;
+	}
+	
+	.text-subtext {
+		margin: auto 0;
+		padding: 0 4vw;
+		font-size: 0.75em;
+		font-weight: 400;
+	}
+
+	.profile-about-photo {
+		width: 3em;
+		height: 3em;
+		border-radius: 12px;
+		display: inline-block;
+	}
+}
+
